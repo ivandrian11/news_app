@@ -36,7 +36,7 @@ function Posts({ router }) {
       </Head>
       <Layout>
         <div className="container mx-auto mt-8 space-y-4 tracking-tighter">
-          <h2 className="text-xl text-gray-500 capitalize">
+          <h2 className="text-xl capitalize">
             Category: {router.query.slug.slice(-1)}
           </h2>
           <div className="relative w-full h-80 lg:h-[32rem] mx-auto">
@@ -50,9 +50,7 @@ function Posts({ router }) {
             />
           </div>
           <div className="pb-4 border-b">
-            <h1 className="text-2xl font-bold text-neutral">
-              {posts.featured_post.title}
-            </h1>
+            <h1 className="text-2xl font-bold">{posts.featured_post.title}</h1>
             <ReactMarkdown className="mt-2 mb-1 leading-7 tracking-wider text-justify">
               {posts.featured_post.headline}
             </ReactMarkdown>

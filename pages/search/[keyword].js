@@ -37,7 +37,7 @@ function Search({ router }) {
       </Head>
       <Layout>
         <div className="container mx-auto mt-8 space-y-4 tracking-tighter">
-          <h2 className="text-xl text-gray-500 capitalize">
+          <h2 className="text-xl capitalize">
             Hasil untuk &quot;{router.query.keyword}&quot;
           </h2>
 

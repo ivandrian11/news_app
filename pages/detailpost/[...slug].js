@@ -33,9 +33,7 @@ function Detail({ router }) {
       </Head>
       <Layout>
         <div className="container mx-auto mt-8 space-y-4 tracking-tighter">
-          <h1 className="text-3xl font-bold text-center text-neutral">
-            {details.title}
-          </h1>
+          <h1 className="text-3xl font-bold text-center">{details.title}</h1>
           <div className="flex justify-center gap-x-6">
             <div className="flex items-center gap-x-1">
               {/* prettier-ignore */}
