@@ -20,7 +20,7 @@ export default function Carousel({ data }) {
               priority
               fill
             />
-            <div className="absolute w-64 p-8 bg-white shadow-lg left-20 md:w-3/5 lg:w-1/2 2xl:w-1/3 md:left-32 top-32">
+            <div className="absolute w-64 p-8 bg-white shadow-lg left-[70px] md:w-3/5 lg:w-1/2 2xl:w-1/3 md:left-32 top-32">
               <h1 className="text-xl leading-10 md:text-3xl line-clamp-2">
                 {post.title}
               </h1>
@@ -46,13 +46,13 @@ export default function Carousel({ data }) {
           <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
             <a
               href={`#slide${index === 0 ? data.length : index}`}
-              className="bg-white border-none btn btn-circle text-cyan-500"
+              className="bg-white md:border-none btn btn-circle text-cyan-500"
             >
               ❮
             </a>
             <a
               href={`#slide${index === data.length - 1 ? 1 : index + 2}`}
-              className="bg-white border-none btn btn-circle text-cyan-500"
+              className="bg-white md:border-none btn btn-circle text-cyan-500"
             >
               ❯
             </a>

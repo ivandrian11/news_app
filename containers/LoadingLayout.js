@@ -14,7 +14,7 @@ export default function LoadingLayout() {
       <Layout>
         <div
           role="status"
-          className="space-y-2.5 animate-pulse max-w-lg mt-8 mx-auto"
+          className="space-y-2.5 animate-pulse w-screen mt-8 mx-auto px-8"
         >
           <div className="flex items-center w-full space-x-2">
             <div className="h-2.5 bg-gray-200 rounded-full dark:bg-gray-700 w-32" />

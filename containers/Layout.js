@@ -3,7 +3,7 @@ import Navbar from "../components/Navbar";
 
 export default function Layout({ children, home }) {
   return (
-    <main>
+    <main className="w-screen">
       <Navbar />
 
       {children}
