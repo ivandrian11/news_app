@@ -13,9 +13,7 @@ export default function Carousel({ data }) {
         >
           <div className="relative w-full tracking-tighter h-[32rem]">
             <Image
-              src={`/api/imageproxy?url=${encodeURIComponent(
-                post.image.replace("thumbnail", "large")
-              )}`}
+              src={post.image.replace("thumbnail", "large")}
               className="object-cover md:object-fill"
               alt={post.title}
               quality={80}

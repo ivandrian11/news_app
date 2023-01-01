@@ -55,7 +55,7 @@ function Detail({ router }) {
           </div>
           <div className="relative w-full lg:w-3/4 h-80 lg:h-[32rem] mx-auto">
             <Image
-              src={`/api/imageproxy?url=${encodeURIComponent(details.image)}`}
+              src={details.image}
               className="object-cover md:object-fill"
               alt={details.image_desc}
               quality={80}

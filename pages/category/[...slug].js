@@ -41,9 +41,7 @@ function Posts({ router }) {
           </h2>
           <div className="relative w-full h-80 lg:h-[32rem] mx-auto">
             <Image
-              src={`/api/imageproxy?url=${encodeURIComponent(
-                posts.featured_post.image
-              )}`}
+              src={posts.featured_post.image}
               className="object-cover md:object-fill"
               alt={posts.featured_post.title}
               quality={80}
