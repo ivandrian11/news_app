@@ -1,7 +1,7 @@
 import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
 
-export default function Layout({ home, children }) {
+export default function Layout({ children, home }) {
   return (
     <main>
       <Navbar />

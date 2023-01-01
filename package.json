@@ -20,7 +20,8 @@
     "react-dom": "18.2.0",
     "react-markdown": "^8.0.4",
     "react-redux": "^8.0.5",
-    "react-redux-loading-bar": "^5.0.4"
+    "react-redux-loading-bar": "^5.0.4",
+    "sharp": "^0.31.3"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.13",

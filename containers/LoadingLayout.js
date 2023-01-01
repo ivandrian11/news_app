@@ -1,5 +1,6 @@
 import React from "react";
 import Head from "next/head";
+import Image from "next/image";
 import Layout from "./Layout";
 
 export default function LoadingLayout() {
@@ -14,7 +15,7 @@ export default function LoadingLayout() {
       <Layout>
         <div
           role="status"
-          className="space-y-2.5 animate-pulse max-w-lg mx-auto mt-8"
+          className="space-y-2.5 animate-pulse max-w-lg mt-8 mx-auto"
         >
           <div className="flex items-center w-full space-x-2">
             <div className="h-2.5 bg-gray-200 rounded-full dark:bg-gray-700 w-32" />
@@ -46,6 +47,7 @@ export default function LoadingLayout() {
             <div className="h-2.5 bg-gray-200 rounded-full dark:bg-gray-700 w-80" />
             <div className="h-2.5 bg-gray-300 rounded-full dark:bg-gray-600 w-full" />
           </div>
+          <span className="sr-only">Loading...</span>
         </div>
       </Layout>
     </>
