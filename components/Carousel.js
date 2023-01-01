@@ -20,7 +20,7 @@ export default function Carousel({ data }) {
               priority
               fill
             />
-            <div className="absolute w-64 p-8 bg-white shadow-lg left-[70px] md:w-3/5 lg:w-1/2 2xl:w-1/3 md:left-32 top-32">
+            <div className="absolute w-64 p-8 bg-white shadow-lg left-16 md:w-3/5 lg:w-1/2 2xl:w-1/3 md:left-32 top-32">
               <h1 className="text-xl leading-10 md:text-3xl line-clamp-2">
                 {post.title}
               </h1>
