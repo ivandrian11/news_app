@@ -31,7 +31,10 @@ export default function Category({ data }) {
               >
                 {category.subCategory
                   .filter(
-                    (sub) => sub.name !== "Podcast" && sub.name !== "Commentary"
+                    (sub) =>
+                      sub.name !== "Podcast" &&
+                      sub.name !== "Commentary" &&
+                      sub.name !== "Environment"
                   )
                   .map((sub) => (
                     <Link

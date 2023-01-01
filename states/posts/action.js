@@ -32,6 +32,7 @@ function asyncReceivePosts(link) {
       dispatch(receivePostsActionCreator(post));
     } catch (error) {
       alert(error.message);
+      window.location = "/";
     }
 
     dispatch(hideLoading());
