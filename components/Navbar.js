@@ -1,23 +1,23 @@
 import React, { useState } from "react";
 import Link from "next/link";
-// import { useRouter } from "next/router";
+import { useRouter } from "next/router";
 
 export default function Navbar() {
-  // const router = useRouter();
+  const router = useRouter();
   const [keyword, setKeyword] = useState("");
 
   const handleClick = (e) => {
     e.preventDefault();
     if (keyword !== "") {
-      // router.push(`/search/${keyword}`);
-      window.location = `/search/${keyword}`;
+      router.push(`/search/${keyword}`);
+      // window.location = `/search/${keyword}`;
     }
   };
 
   const handleChange = (e) => setKeyword(e.target.value);
 
   return (
-    <div className="sticky top-0 z-50 bg-neutral navbar">
+    <div className="sticky top-0 z-30 bg-neutral navbar">
       <div className="flex-1">
         <Link
           href="/"
