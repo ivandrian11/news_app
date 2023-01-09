@@ -34,6 +34,7 @@ export default function Category({ data }) {
                     (sub) =>
                       sub.name !== "Podcast" &&
                       sub.name !== "Commentary" &&
+                      sub.name !== "The Brief" &&
                       sub.name !== "Environment"
                   )
                   .map((sub) => (
